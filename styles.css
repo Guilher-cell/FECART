@@ -1,0 +1,411 @@
+/* Estilos globais */
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #616161;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #a2acaa;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.carousel-item h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+.carousel-inner {
+    width: 100%;
+    height: 1310px;
+}
+
+
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: white;
+}
+
+nav ul li a:hover {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Banner Principal */
+.hero {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: rgb(10, 10, 10);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 20px rgb(36, 24, 143);
+    border: none;
+}
+
+/* Seção de Produtos */
+.produtos {
+    padding: 60px 20px;
+    background-color: #fff;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.produto p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.produto span {
+    font-size: 20px;
+    color: #0056b3;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Seção Sobre Nós */
+.sobre {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    width: 100%;
+
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 18px;
+    color: #666;
+}
+/* Seção equipe*/
+/* Seção equipe */
+.equipe {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e9ecef;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.equipe div {
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+    color: #1e90ff;
+    margin: 10px;
+}
+
+.equipe img {
+    width: 200px; /* Ajuste conforme necessário */
+    height: 200px; /* Ajuste conforme necessário */
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.equipe div:hover img {
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.equipe img:hover {
+    opacity: .5;
+}
+
+/* Seção de Contato */
+.contato {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e90ff;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato input, 
+.contato textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contato button {
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+.container{
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 50px;
+    justify-content: center;
+    img{
+        justify-content: center;
+        padding-bottom: 50px;
+        border-radius: 50px;
+        background-color: #0056b3;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+    .logo img{
+        max-width: 70%;
+    }
+    .carousel-item h2 {
+        position: absolute;
+        bottom: -150px;
+        padding-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 0.5rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .carousel-inner {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 60px 20px;
+        color: rgb(10, 10, 10);
+    }
+    
+    .hero h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .produtos {
+        padding: 40px 20px;
+        background-color: #fff;
+    }
+    
+    .produtos h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: black;
+    }
+    
+    .produtos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .produto {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        width: calc(100% - 40px);
+        text-align: center;
+    }
+    
+    .produto img {
+        max-width: 100%;
+        height: 250px;
+        width: auto;
+        border-radius: 10px;
+    }
+    
+    .produto h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    .produto p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .produto span {
+        font-size: 18px;
+        color: #0056b3;
+        font-weight: bold;
+    }
+    nav ul {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0px 15px;
+        margin: 20px 0 0 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        font-size: 15px;
+        color: white;
+    }
+    
+    nav ul li a:hover {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+  }
